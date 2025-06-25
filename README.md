@@ -31,28 +31,47 @@ This is a simple and smart **line-following robot** project using the **NodeMCU 
 
 [NodeMCU ESP8266]
    D0 ---------> IN3 (Motor Left)
+   
    D1 ---------> IN4 (Motor Left)
+   
    D2 ---------> IN1 (Motor Right)
+   
    D4 ---------> IN2 (Motor Right)
+   
    D3 ---------> ENA (PWM Right)
+   
    D5 ---------> ENB (PWM Left)
+   
    D6 <--------- Right Line Sensor Output
+   
    D7 <--------- Left Line Sensor Output
+   
    VIN --------> 5V
+   
    GND --------> GND (shared with sensors & motor driver)
+   
 
 [Motor Driver]
    IN1, IN2 -> Right Motor
+   
    IN3, IN4 -> Left Motor
+   
    ENA -> PWM Right (from D3)
+   
    ENB -> PWM Left (from D5)
+   
    VCC -> Battery (e.g. 7.4V)
+   
    GND -> Common GND
 
 [Line Sensors]
+
    OUT -> D6 / D7
+   
    VCC -> 3.3V (or 5V if sensor supports it)
+   
    GND -> GND
+   
 
 
 ---
